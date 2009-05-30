@@ -1,0 +1,65 @@
+#!/usr/bin/make -f
+
+define checkdir
+	test -f debian/rules
+endef
+
+build: build-indep build-arch
+
+build-indep:
+	$(checkdir)
+	pod2man whatsnewfm.pl > $(CURDIR)/whatsnewfm.1
+	touch build
+
+build-arch:
+
+clean:
+	$(checkdir)
+	-rm -f `find . -name "*~"`
+	-rm -rf debian/files* core
+	-rm -rf debian/whatsnewfm
+	-rm -ff debian/substvars
+	-rm -f whatsnewfm.1
+	-rm -f build
+
+install: install-indep install-arch
+
+install-indep:
+	$(checkdir)
+	install -d $(CURDIR)/debian/whatsnewfm/usr/bin/
+	install -m 0755 whatsnewfm.pl $(CURDIR)/debian/whatsnewfm/usr/bin/whatsnewfm.pl
+
+binary-indep: checkroot build install
+	$(checkdir)
+
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs
+	dh_installdocs HISTORY README
+	dh_installexamples whatsnewfmrc.sample welcome
+	dh_installman whatsnewfm.1
+        # dh_installman would copy the manpage in man/pl/man1 as describes
+        # in the dh_installman documentation.  Work around this by using
+        # whatsnewfm.1 instead of whatsnewfm.pl.1 and renaming here:
+	mv $(CURDIR)/debian/whatsnewfm/usr/share/man/man1/whatsnewfm.1 $(CURDIR)/debian/whatsnewfm/usr/share/man/man1/whatsnewfm.pl.1
+	dh_perl
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+install-arch:
+
+binary: binary-indep binary-arch
+
+binary-indep: build-indep install-indep
+
+binary-arch:
+
+checkroot:
+	$(checkdir)
+	test root = "`whoami`"
+
+.PHONY: binary binary-arch binary-indep clean checkroot

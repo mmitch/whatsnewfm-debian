@@ -1,0 +1,182 @@
+whatsnewfm (0.7.1-1) unstable; urgency=low
+
+  * New upstream release (closes: #531104)
+
+ -- Christian Garbs <debian@cgarbs.de>  Sat, 30 May 2009 22:07:56 +0200
+
+whatsnewfm (0.7.0-2) unstable; urgency=low
+
+  * Update debian/copyright information again.  whatsnewfm.pl clearly
+    states "GPL v2 or later", while the debian/copyright file said
+    "exactly GPL v2".
+
+ -- Christian Garbs <debian@cgarbs.de>  Sun, 29 Mar 2009 11:51:32 +0200
+
+whatsnewfm (0.7.0-1) unstable; urgency=low
+
+  * build official Debian package (closes: 521133)
+  * Update standards version from 3.8.0 to 3.8.1.
+    - raise debhelper compatibility level to 7
+  * Link to correct version of GPL in debian/copyright.
+  
+ -- Christian Garbs <debian@cgarbs.de>  Sat, 28 Mar 2009 00:17:54 +0100
+
+whatsnewfm (0.7.0-1~2) unstable; urgency=low
+
+  * really add Homepage field to debian/control
+
+ -- Christian Garbs <debian@cgarbs.de>  Fri, 27 Mar 2009 22:13:29 +0100
+
+whatsnewfm (0.7.0-1~1) unstable; urgency=low
+
+  * New upstream release
+  * Update standards version from 3.6.2.0 to 3.8.0.
+    - add Homepage field to debian/control
+    - now violating section 10.4 (script-with-language-extension)
+      because upstream ships main script with .pl extension
+  * Fix lintian warning on copyright file.
+  * Fix lintian warning on using the arch target during build
+    (package is arch any).
+
+ -- Christian Garbs <debian@cgarbs.de>  Thu, 26 Mar 2009 22:46:56 +0100
+
+whatsnewfm (0.7.0~beta-2) unstable; urgency=low
+
+  * New upstream CVS snapshot for further testing.
+
+ -- Christian Garbs <debian@cgarbs.de>  Mon, 23 Mar 2009 23:13:43 +0100
+
+whatsnewfm (0.7.0~beta-1) unstable; urgency=low
+
+  * New upstream CVS snapshot to support the changed newsletter format.
+    Get this out the door as fast as possible to provide some testing of
+    the necessary 0.7.0 release.
+
+ -- Christian Garbs <debian@cgarbs.de>  Thu, 19 Mar 2009 21:47:09 +0100
+
+whatsnewfm (0.6.6-1) unstable; urgency=low
+
+  * New upstream release
+  * Add maildrop to Recommends because it is featured as another example
+    in the documentation (closes: #385764).
+  * Declare versioned Build-Depends on debhelper.
+
+ -- Christian Garbs <debian@cgarbs.de>  Wed, 13 Sep 2006 20:55:02 +0200
+
+whatsnewfm (0.6.5-2) unstable; urgency=low
+
+  * Use debhelper instead of debmake.
+  * Update to standards version 3.6.2.0 (no changes).
+  * Update FSF address.
+
+ -- Christian Garbs <debian@cgarbs.de>  Wed,  1 Feb 2006 22:00:30 +0100
+
+whatsnewfm (0.6.5-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christian Garbs <debian@cgarbs.de>  Tue, 13 Apr 2004 17:07:05 +0200
+
+whatsnewfm (0.6.4-1) unstable; urgency=low
+
+  * New upstream release
+  * Use exim4 instead of exim as default MTA dependency.
+
+ -- Christian Garbs <debian@cgarbs.de>  Sun, 15 Feb 2004 15:42:35 +0100
+
+whatsnewfm (0.6.3-1) unstable; urgency=low
+
+  * New upstream release
+  * Updated to standards version 3.6.0 (no changes).
+
+ -- Christian Garbs <debian@cgarbs.de>  Mon, 18 Aug 2003 22:05:04 +0200
+
+whatsnewfm (0.6.2-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christian Garbs <debian@cgarbs.de>  Sun, 27 Apr 2003 11:50:30 +0200
+
+whatsnewfm (0.6.1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christian Garbs <debian@cgarbs.de>  Sat, 11 Jan 2003 16:37:45 +0100
+
+whatsnewfm (0.6.0-2) unstable; urgency=low
+
+  * Added upstream to copyright file
+
+ -- Christian Garbs <debian@cgarbs.de>  Sun,  5 Jan 2003 01:40:59 +0100
+
+whatsnewfm (0.6.0-1) unstable; urgency=low
+
+  * New upstream release
+  * Build-Depend on debmake
+
+ -- Christian Garbs <debian@cgarbs.de>  Sat,  4 Jan 2003 21:56:28 +0100
+
+whatsnewfm (0.5.3-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christian Garbs <debian@cgarbs.de>  Sun, 29 Dec 2002 17:24:49 +0100
+
+whatsnewfm (0.5.2-3) unstable; urgency=low
+
+  * Updated to standards version 3.5.8.
+  * Provide exim as alternative for virtual package mail-transport.
+    
+ -- Christian Garbs <debian@cgarbs.de>  Sat, 21 Dec 2002 17:27:08 +0100
+
+whatsnewfm (0.5.2-2) unstable; urgency=low
+
+  * Depend on mail-transport-agent and recommend procmail.
+  * Changed Build-Depends to Build-Depends-Indep.
+  
+ -- Christian Garbs <debian@cgarbs.de>  Wed, 18 Dec 2002 22:31:13 +0100
+
+whatsnewfm (0.5.2-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christian Garbs <debian@cgarbs.de>  Wed,  4 Dec 2002 10:01:40 +0100
+
+whatsnewfm (0.5.1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christian Garbs <debian@cgarbs.de>  Tue,  3 Dec 2002 10:13:28 +0100
+
+whatsnewfm (0.5.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christian Garbs <debian@cgarbs.de>  Mon, 25 Nov 2002 00:37:36 +0100
+
+whatsnewfm (0.4.11-2) unstable; urgency=low
+
+  * Added manpage.
+  * Don't depend on a special Perl version.
+  * Build-Depend on Perl (we need pod2man).
+  * Fixed Maintainer: in control file.
+
+ -- Christian Garbs <debian@cgarbs.de>  Sat, 23 Nov 2002 15:59:17 +0100
+
+whatsnewfm (0.4.11-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christian Garbs <debian@cgarbs.de>  Thu, 21 Nov 2002 18:16:35 +0100
+
+whatsnewfm (0.4.11pre1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christian Garbs <debian@cgarbs.de>  Tue, 19 Nov 2002 23:24:33 +0100
+
+whatsnewfm (0.4.10-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Christian Garbs [Master Mitch] <mitch@@yggdrasil.mitch.h.shuttle.de>  Tue, 10 Sep 2002 12:23:40 +0200
