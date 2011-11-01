@@ -1,3 +1,9 @@
+whatsnewfm (0.7.2-1~1) unstable; urgency=low
+
+  * Rebuild for cgarbs.de repository.
+
+ -- Christian Garbs <debian@cgarbs.de>  Tue, 01 Nov 2011 13:29:28 +0100
+
 whatsnewfm (0.7.2-1) unstable; urgency=low
 
   * New upstream release (closes: #647079)
