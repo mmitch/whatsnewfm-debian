@@ -1,16 +1,17 @@
 #!/usr/bin/perl -w
 #############################################################################
 #
-my $id='whatsnewfm.pl  v0.7.1  2009-05-30';
-#   Filters the freshmeat newsletter for 'new' or 'interesting' entries.
+my $id='whatsnewfm.pl  v0.7.2  2011-11-01';
+#   Filters the freecode newsletter for 'new' or 'interesting' entries.
 #   
-#   Copyright (C) 2000-2009  Christian Garbs <mitch@cgarbs.de>
+#   Copyright (C) 2000-2011  Christian Garbs <mitch@cgarbs.de>
 #                            Joerg Plate <Joerg@Plate.cx>
 #                            Dominik Brettnacher <dominik@brettnacher.org>
 #                            Pedro Melo Cunha <melo@isp.novis.pt>
 #                            Matthew Gabeler-Lee <msg2@po.cwru.edu>
 #                            Bernd Rilling <brilling@ifsw.uni-stuttgart.de>
 #                            Jost Krieger <Jost.Krieger@ruhr-uni-bochum.de>
+#                            Francois Marier <francois@debian.org>
 #
 #
 #   This program is free software; you can redistribute it and/or modify
@@ -28,6 +29,10 @@ my $id='whatsnewfm.pl  v0.7.1  2009-05-30';
 #   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #
 #############################################################################
+#
+# v0.7.2
+# 2011/11/01--> BUGFIX: Newsletter format has changed:
+#                       Freshmeat has become Freecode.
 #
 # v0.7.1
 # 2009/05/30--> BUGFIX: Newsletter format has changed.
@@ -219,7 +224,7 @@ my $id='whatsnewfm.pl  v0.7.1  2009-05-30';
 
 =head1 NAME
 
-whatsnewfm - filter the daily newsletter from freshmeat.net
+whatsnewfm - filter the daily newsletter from freecode.com
 
 =head1 SYNOPSIS
 
@@ -234,7 +239,7 @@ B<whatsnewfm.pl> [ B<-c> F<config file> ] B<del> [ I<project id> ] [ I<project i
 =head1 DESCRIPTION
 
 whatsnewfm is a utility to filter the daily newsletter from
-freshmeat.net
+freecode.com
 
 The main purpose is to cut the huge newsletter to a smaller size by
 only showing items that you didn't see before.
@@ -343,9 +348,8 @@ $config->{CONFIGFILE} = "~/.whatsnewfmrc";
 
 # information
 my $whatsnewfm_homepages = [ "http://www.cgarbs.de/whatsnewfm.en.html" ,
-			     "http://www.h.shuttle.de/mitch/whatsnewfm.en.html",
-			     "http://sourceforge.net/projects/whatsnewfm/",
-			     "http://whatsnewfm.sourceforge.net/" ];
+			     "http://github.com/mmitch/whatsnewfm",
+			     "http://sourceforge.net/projects/whatsnewfm/" ];
 my $whatsnewfm_author = "Christian Garbs <mitch\@cgarbs.de>";
 
 # configuration file
@@ -563,7 +567,7 @@ sub parse_newsletter()
     my $interesting;
     my $this_time_new;
 
-    my $subject      = "Subject: Freshmeat Newsletter (no subject?)\n";
+    my $subject      = "Subject: Freecode Newsletter (no subject?)\n";
     my $encoding     = '';
     my $position     = 1;
     # 1-> after mail header
@@ -700,7 +704,7 @@ sub parse_newsletter()
 		}
 
 		# check for project url (last tag)
-		elsif ($line =~ m!^http://freshmeat.net/projects/(.+)$!) {
+		elsif ($line =~ m!^http://freecode.com/projects/(.+)$!) {
 		    # save old tag
 		    $tags{$tag} = $text if defined $tag;
 		    # save url

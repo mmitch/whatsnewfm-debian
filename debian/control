@@ -2,23 +2,26 @@ Source: whatsnewfm
 Section: mail
 Priority: optional
 Maintainer: Christian Garbs <debian@cgarbs.de>
-Standards-Version: 3.8.1
+Standards-Version: 3.9.1
 Build-Depends-Indep: perl, debhelper (>=7)
 Homepage: http://www.cgarbs.de/whatsnewfm.en.html
 
 Package: whatsnewfm
 Architecture: all
-Depends: perl, libberkeleydb-perl, exim4 | mail-transport-agent
+Depends: perl, libberkeleydb-perl, exim4 | mail-transport-agent, ${misc:Depends}
 Recommends: procmail | maildrop
-Description: A utility to filter the daily newsletter from freshmeat.net
- whatsnewfm is a utility to filter the daily newsletter from freshmeat.net
+Description: A utility to filter the daily newsletter from freecode.net
+ whatsnewfm is a utility to filter the daily newsletter from freecode.net,
+ formerly known as freshmeat.net.
  .
  The main purpose is to cut the huge newsletter to a smaller size by
  only showing items that you didn't see before.
  .
- The items already seen will be stored in a database. After some time, the items
- expire and will be shown again the next time they are included in a newsletter.
+ The items already seen will be stored in a database.  After some
+ time, the items expire and will be shown again the next time they are
+ included in a newsletter.
  .
- If you find an item that you consider particularly useful, you can add it to a
- "hot" list. Items in the hot list are checked for updates so that you don't
- miss anything about your favourite programs.
+ If you find an item that you consider particularly useful, you can
+ add it to a "hot" list.  Items in the hot list are always checked for
+ updates so that you don't miss anything about your favourite
+ programs.

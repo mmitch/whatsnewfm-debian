@@ -1,3 +1,14 @@
+whatsnewfm (0.7.2-1) unstable; urgency=low
+
+  * New upstream release (closes: #647079)
+  * Update debian/copyright information.
+  * Update debian/control:
+    - update package description
+    - bump standard version from 3.8.1 to 3.9.1 (no changes)
+    - fix lintian warning debhelper-but-no-misc-depends
+
+ -- Christian Garbs <debian@cgarbs.de>  Tue, 01 Nov 2011 13:27:42 +0100
+
 whatsnewfm (0.7.1-1) unstable; urgency=low
 
   * New upstream release (closes: #531104)
