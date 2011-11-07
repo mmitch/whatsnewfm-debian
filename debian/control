@@ -2,7 +2,7 @@ Source: whatsnewfm
 Section: mail
 Priority: optional
 Maintainer: Christian Garbs <debian@cgarbs.de>
-Standards-Version: 3.9.1
+Standards-Version: 3.9.2
 Build-Depends-Indep: perl, debhelper (>=7)
 Homepage: http://www.cgarbs.de/whatsnewfm.en.html
 
