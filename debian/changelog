@@ -1,3 +1,9 @@
+whatsnewfm (0.7.2-1) stable; urgency=medium
+
+  * New upstream release (closes: #647079)
+
+ -- Christian Garbs <debian@cgarbs.de>  Mon, 07 Nov 2011 20:28:44 +0100
+
 whatsnewfm (0.7.1-1) unstable; urgency=low
 
   * New upstream release (closes: #531104)
