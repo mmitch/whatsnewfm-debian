@@ -1,0 +1,252 @@
+
+
+whatsnewfm HISTORY
+
+
+2009/05/30  -  0.7.1
+~~~~~~~~~~~~~~~~~~~~
+- BUGFIX: Newsletter format has changed.
+
+
+
+2009/03/26  -  0.7.0
+~~~~~~~~~~~~~~~~~~~~
+- BUGFIX: support the new newsletter format of the FM3 relaunch.
+  (patch by by Bernd Rilling)
+- Releases can be scored by license, see the LICSCORE parameter.
+  (patch by Jost Krieger)
+
+
+
+2006/09/13  -  0.6.6
+~~~~~~~~~~~~~~~~~~~~
+- Describe maildrop integration.
+  (by Josip Rodin, see http://bugs.debian.org/385764)
+
+
+
+2004/04/13  -  0.6.5
+~~~~~~~~~~~~~~~~~~~~
+- Regular expressions for scoring the releases now match
+  over multiple lines.
+
+
+
+2004/02/15  -  0.6.4
+~~~~~~~~~~~~~~~~~~~~
+- Fix rare problems with '=20' appearing in whatsnewfm mails.
+  Charset and encoding are now copied from the newsletter.
+
+
+
+2003/08/18  -  0.6.3
+~~~~~~~~~~~~~~~~~~~~
+- Parameters of sendmail(1) call can be configured.  You propably
+  need to add "MAIL_OPT=-oi -t" to your configuration file.
+
+
+
+2003/04/27  -  0.6.2
+~~~~~~~~~~~~~~~~~~~~
+- BUGFIX: Multiline subjects in the newsletter were not handled
+  correctly.
+- Removed obsolete filenames from documentation.
+- Changed expiration algorithm for old database.  Entries will stay at
+  least 15 days in the database.
+- Use different parameters for sending mail.
+
+
+
+2003/01/11  -  0.6.1
+~~~~~~~~~~~~~~~~~~~~
+- BUGFIX: Number of projects added to the old database shown in the
+          newsletter statistics was wrong.
+
+
+
+2003/01/04  -  0.6.0
+~~~~~~~~~~~~~~~~~~~~
+- No changes, v0.5.3 seems stable and is released as v0.6.0.
+
+
+
+2002/12/29  -  0.5.3
+~~~~~~~~~~~~~~~~~~~~
+- Location and name of configuration file can be changed.
+- Small documentation updates.
+
+
+
+2002/12/04  -  0.5.2
+~~~~~~~~~~~~~~~~~~~~
+- BUGFIX: v0.5.2 didn't run at all.
+
+
+
+2002/12/03  -  0.5.1
+~~~~~~~~~~~~~~~~~~~~
+- Added a manpage.
+- Instructions on how to import old databases from v0.4.x.
+- DATE_CMD configuration variable mustn't be used any more.
+
+
+
+2002/11/24  -  0.5.0
+~~~~~~~~~~~~~~~~~~~~
+- Use Berkeley DB to store data.
+
+
+
+2002/11/21  -  0.4.11
+~~~~~~~~~~~~~~~~~~~~~
+- BUGFIX: Perl 5.8 showed some warnings on startup.
+- Some minor changes in README file.
+
+
+
+2001/11/07  -  0.4.10
+~~~~~~~~~~~~~~~~~~~~~
+- BUGFIX: Newsletter format has changed.
+
+
+
+2001/10/19  -  0.4.9
+~~~~~~~~~~~~~~~~~~~~
+- BUGFIX: Welcome message was not working correctly.
+- Added scoring of editorial articles.
+- A list of skipped articles can be shown (new parameter LIST_SKIPPED).
+- Warnings concerning your configuration file are sent via mail.
+- Items skipped with 'low score' will not be added to the list of
+  'already seen' projects any more.
+
+
+
+2001/08/15  -  0.4.8
+~~~~~~~~~~~~~~~~~~~~
+- BUGFIX: Categories were missing in 'hot' mails.
+
+
+
+2001/08/10  -  0.4.7
+~~~~~~~~~~~~~~~~~~~~
+- BUGFIX: Newsletter format has changed.
+
+
+
+2001/07/28  -  0.4.6
+~~~~~~~~~~~~~~~~~~~~
+- Added scoring of Freshmeat Categories.
+- Updated help text (whatsnewfm.pl -h).
+
+
+
+2001/07/19  -  0.4.5
+~~~~~~~~~~~~~~~~~~~~
+- BUGFIX: Newsletter format has changed.
+
+
+
+2001/06/23  -  0.4.4
+~~~~~~~~~~~~~~~~~~~~
+- BUGFIX: Welcome message was not working correctly.
+- BUGFIX: Warning message about changed newsletter format was not
+  generated correctly.
+- "view" accepts optional regexp to filter the output.
+- Minor documentation updates.
+
+
+
+2001/02/11  -  0.4.3
+~~~~~~~~~~~~~~~~~~~~
+- BUGFIX: Existing comments in 'hot' database could not be updated.
+- BUGFIX: URL was missing in articles.
+- BUGFIX: Project ID was missing in 'hot' mails.
+- The newsletter summary can be printed at top or bottom of a parsed
+  newsletter (add SUMMARY_AT=top to your ~/.whatsnewfmrc).
+- Comments from 'hot' database are included in 'hot' mails.
+
+
+
+2001/02/05  -  0.4.2
+~~~~~~~~~~~~~~~~~~~~
+- BUGFIX: freshmeat has changed the syntax of the newsletter.
+- Improved detection of changes in newsletter format.
+- Two releases of the same project within one newsletter are handled
+  correctly.
+
+
+
+2001/02/02  -  0.4.1
+~~~~~~~~~~~~~~~~~~~~
+- BUGFIX: A line with a single dot "." within freetext fields
+  (e.g. release details) caused sendmail to end the mail at that
+  point.
+- Changes in the newsletter format should be detected and
+  the user gets a warning mail telling him to update whatsnewfm.
+
+
+
+2001/01/31  -  0.4.0
+~~~~~~~~~~~~~~~~~~~~
+- BUGFIX: freshmeat has changed the syntax of the newsletter.
+
+
+
+2001/01/30  -  0.2.6
+~~~~~~~~~~~~~~~~~~~~
+- New items with less than a specified score will not be shown.
+
+
+
+2000/11/25  -  0.2.5
+~~~~~~~~~~~~~~~~~~~~
+- Freshmeat editorials are included in the list of new applications.
+
+
+
+2000/11/10  -  0.2.4
+~~~~~~~~~~~~~~~~~~~~
+- BUGFIX: Perl 5.6 showed some warnings on startup.
+
+
+
+2000/10/30  -  0.2.3
+~~~~~~~~~~~~~~~~~~~~
+- Reacted to a change in the newsletter format (item name).
+- "add" and "del" give more verbose messages.
+
+
+
+2000/09/22  -  0.2.2
+~~~~~~~~~~~~~~~~~~~~
+- Added scoring of newsletter items.
+- Adding and removing items from the "hot" database now gives
+  affirmative messages.
+
+
+
+2000/09/10  -  0.2.1
+~~~~~~~~~~~~~~~~~~~~
+- BUGFIX: Statistic calculations at the end of a parsed newsletter
+  were broken.
+- Configuration is read from a configuration file (you don't need to
+  edit the script any more).
+- You can print the contents of your 'hot' database.
+
+
+
+2000/08/22  -  0.2.0
+~~~~~~~~~~~~~~~~~~~~
+- BUGFIX: freshmeat has changed the syntax of the newsletter.
+- Updates can be sent as one big or several small mails.
+
+
+
+2000/08/04  -  0.0.3
+~~~~~~~~~~~~~~~~~~~~
+- BUGFIX: Empty update mail were sent when there were no updates.
+- BUGFIX: Comments in the "hot" database were deleted every time.
+- Entries can be added or removed from the "hot" database.
+- A help text is shown when wrong command line arguments are given.
+- *Major* code cleanup (even subroutines now!).
+- added this HISTORY file

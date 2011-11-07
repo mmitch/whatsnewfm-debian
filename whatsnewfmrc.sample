@@ -1,0 +1,73 @@
+# This is a sample configuration file for whatsnewfm (http://www.cgarbs.de)
+# Please edit the following variables to your needs and copy this file
+# to ~/.whatsnewfmrc
+
+
+#
+# *==> Who should get the mail with new programs?
+#
+MAILTO=someuser@example.com
+
+
+#
+# *==> Where are the databases located?
+#
+DB_NAME=~/.whatsnewfm.db
+
+
+#
+# *==> After how many months does an entry in the "old" database expire?
+#
+EXPIRE=12
+
+
+#
+# *==> Collect "hot" updates in a single mail or send multiple mails?
+#
+UPDATE_MAIL=single
+# UPDATE_MAIL=multiple
+
+
+#
+# *==> Where in the mail message should we place the summary of new apps?
+#
+SUMMARY_AT=bottom
+# SUMMARY_AT=top
+
+
+#
+# *==> Where in the mail message should we place the list of skipped items?
+#
+LIST_SKIPPED=no
+# LIST_SKIPPED=bottom
+# LIST_SKIPPED=top
+
+
+#
+# *==> Scoring (release text): score_value <TAB> regexp
+#      (see "perldoc perlre" for help on regexp's)
+#
+#SCORE=+50	mp3
+#SCORE=-999	usb
+
+
+#
+# *==> Category Scoring: score_value <TAB> regexp
+#      (see "perldoc perlre" for help on regexp's)
+#
+#CATSCORE=+150	Editorial
+#CATSCORE=+050	Multimedia
+#CATSCORE=-999	WWW
+
+
+#
+# *==> Items with a score less than this are ignored:
+#
+SCORE_MIN=-999
+
+
+#
+# *==> How to send mail (mail program and parameters):
+#
+MAIL_CMD=/usr/lib/sendmail
+MAIL_OPT=-oi -t
