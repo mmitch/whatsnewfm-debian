@@ -1,8 +1,22 @@
-whatsnewfm (0.7.2-1~1) unstable; urgency=low
+whatsnewfm (0.7.2-2~1) unstable; urgency=low
 
-  * Rebuild for cgarbs.de repository.
+  * Rebuild for cgarbs.de repository under Squeeze.
 
- -- Christian Garbs <debian@cgarbs.de>  Tue, 01 Nov 2011 13:29:28 +0100
+ -- Christian Garbs <debian@cgarbs.de>  Mon, 07 Nov 2011 22:10:07 +0100
+
+whatsnewfm (0.7.2-2) unstable; urgency=medium
+
+  * Update urgency to medium as bug #647079 is grave.
+  * Update debian/control:
+    - fix typo in package description (freecode.net -> freecode.com)
+    - remove article from description synopsis
+    - bump standard version to 3.9.2 (no changes)
+  * Update debian/rules:
+    - remove substvars and debhelper.log in clean target
+    - remove HISTORY file from dh_installdocs as dh_installchangelogs
+      already handles it (explicitly list it at dh_installchangelogs)
+
+ -- Christian Garbs <debian@cgarbs.de>  Mon, 07 Nov 2011 21:43:53 +0100
 
 whatsnewfm (0.7.2-1) unstable; urgency=low
 
