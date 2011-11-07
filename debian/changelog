@@ -4,6 +4,8 @@ whatsnewfm (0.7.2-2) unstable; urgency=medium
   * Update debian/control:
     - typo in package description (freecode.net -> freecode.com)
     - bump standard version to 3.9.2 (no changes)
+  * Update debian/rules:
+    - remove substvars and debhelper.log in clean target
 
  --
 
