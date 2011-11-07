@@ -6,6 +6,8 @@ whatsnewfm (0.7.2-2) unstable; urgency=medium
     - bump standard version to 3.9.2 (no changes)
   * Update debian/rules:
     - remove substvars and debhelper.log in clean target
+    - remove HISTORY file from dh_installdocs as dh_installchangelogs
+      already handles it (explicitly list it at dh_installchangelogs)
 
  --
 

@@ -34,8 +34,8 @@ binary-indep: checkroot build install
 
 	dh_testdir
 	dh_testroot
-	dh_installchangelogs
-	dh_installdocs HISTORY README
+	dh_installchangelogs HISTORY
+	dh_installdocs README
 	dh_installexamples whatsnewfmrc.sample welcome
 	dh_installman whatsnewfm.1
         # dh_installman would copy the manpage in man/pl/man1 as describes
