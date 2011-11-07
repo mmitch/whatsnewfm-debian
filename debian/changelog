@@ -10,7 +10,7 @@ whatsnewfm (0.7.2-2) unstable; urgency=medium
     - remove HISTORY file from dh_installdocs as dh_installchangelogs
       already handles it (explicitly list it at dh_installchangelogs)
 
- --
+ -- Christian Garbs <debian@cgarbs.de>  Mon, 07 Nov 2011 21:43:53 +0100
 
 whatsnewfm (0.7.2-1) unstable; urgency=low
 
