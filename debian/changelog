@@ -2,7 +2,8 @@ whatsnewfm (0.7.2-2) unstable; urgency=medium
 
   * Update urgency to medium as bug #647079 is grave.
   * Update debian/control:
-    - typo in package description (freecode.net -> freecode.com)
+    - fix typo in package description (freecode.net -> freecode.com)
+    - remove article from description synopsis
     - bump standard version to 3.9.2 (no changes)
   * Update debian/rules:
     - remove substvars and debhelper.log in clean target
