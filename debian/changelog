@@ -1,5 +1,6 @@
-whatsnewfm (0.7.2-2) unstable; urgency=low
+whatsnewfm (0.7.2-2) unstable; urgency=medium
 
+  * Update urgency to medium as bug #647079 is grave.
   * Update debian/control:
     - typo in package description (freecode.net -> freecode.com)
 
