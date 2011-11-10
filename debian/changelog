@@ -1,5 +1,6 @@
 whatsnewfm (0.7.2-1) unstable; urgency=medium
 
+  [ Christian Garbs ]
   * New upstream release (closes: #647079)
   * Update debian/copyright information.
   * Update debian/control:
@@ -12,7 +13,10 @@ whatsnewfm (0.7.2-1) unstable; urgency=medium
     - remove HISTORY file from dh_installdocs as dh_installchangelogs
       already handles it (explicitly list it at dh_installchangelogs)
 
- -- Christian Garbs <debian@cgarbs.de>  Mon, 07 Nov 2011 21:43:53 +0100
+  [ Francois Marier ]
+  * Refer to GPL-2 directly in debian/copyright
+
+ -- Francois Marier <francois@debian.org>  Thu, 10 Nov 2011 17:21:25 +1300
 
 whatsnewfm (0.7.1-1) unstable; urgency=low
 
