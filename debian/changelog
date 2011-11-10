@@ -16,8 +16,9 @@ whatsnewfm (0.7.2-1) unstable; urgency=medium
   [ Francois Marier ]
   * Refer to GPL-2 directly in debian/copyright
   * Switch to 3.0 (quilt) source package format
+  * Add a watch file
 
- -- Francois Marier <francois@debian.org>  Thu, 10 Nov 2011 17:22:42 +1300
+ -- Francois Marier <francois@debian.org>  Thu, 10 Nov 2011 17:26:07 +1300
 
 whatsnewfm (0.7.1-1) unstable; urgency=low
 
