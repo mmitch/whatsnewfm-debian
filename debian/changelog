@@ -18,7 +18,7 @@ whatsnewfm (0.7.2-1) unstable; urgency=medium
   * Switch to 3.0 (quilt) source package format
   * Add a watch file
 
- -- Francois Marier <francois@debian.org>  Thu, 10 Nov 2011 17:26:07 +1300
+ -- Christian Garbs <debian@cgarbs.de>  Thu, 10 Nov 2011 17:26:07 +1300
 
 whatsnewfm (0.7.1-1) unstable; urgency=low
 
