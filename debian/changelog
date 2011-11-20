@@ -2,6 +2,7 @@ whatsnewfm (0.7.1-1+squeeze1) stable; urgency=medium
 
   * New 0.7.2 upstream release (closes: #647079)
     - take the name change into account and make package work again
+  * Update package description to refer to freecode.com
 
  -- Christian Garbs <debian@cgarbs.de>  Sun, 20 Nov 2011 21:59:46 +1300
 

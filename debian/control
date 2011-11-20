@@ -10,8 +10,9 @@ Package: whatsnewfm
 Architecture: all
 Depends: perl, libberkeleydb-perl, exim4 | mail-transport-agent
 Recommends: procmail | maildrop
-Description: A utility to filter the daily newsletter from freshmeat.net
- whatsnewfm is a utility to filter the daily newsletter from freshmeat.net
+Description: A utility to filter the daily newsletter from freecode.com
+ whatsnewfm is a utility to filter the daily newsletter from freecode.com
+ (formerly freshmeat.net).
  .
  The main purpose is to cut the huge newsletter to a smaller size by
  only showing items that you didn't see before.
