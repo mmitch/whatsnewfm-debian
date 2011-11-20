@@ -1,0 +1,6 @@
+/build
+/debian/files
+/debian/whatsnewfm
+/debian/whatsnewfm.debhelper.log
+/debian/whatsnewfm.substvars
+/whatsnewfm.1
